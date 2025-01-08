@@ -13,15 +13,26 @@ spring:
         - id: playlist-route
           uri: http://localhost:8088/mymusic
           predicates:
-            - Path=/mymusic/playlists
-        - id: context-route
-          uri: http://localhost:8088/mymusic
-          predicates:
-            - Path=/mymusic/perfil
-        - id: playlist-id-route
-          uri: http://localhost:8088/mymusic
-          predicates:
-            - Path=/mymusic/playlists/{id}
+            - Path=/mymusic/**
+
+
+
+
+
+
+
+
+
+
+         # - Path=/mymusic/playlists
+       # - id: context-route
+        #  uri: http://localhost:8088/mymusic
+         # predicates:
+          #  - Path=/mymusic/perfil
+        #- id: playlist-id-route
+         # uri: http://localhost:8088/mymusic
+         # predicates:
+          #  - Path=/mymusic/playlists/{id}
 
 
 
