@@ -18,6 +18,10 @@ spring:
           uri: http://localhost:8088/mymusic
           predicates:
             - Path=/mymusic/perfil
+        - id: playlist-id-route
+          uri: http://localhost:8088/mymusic
+          predicates:
+            - Path=/mymusic/playlists/{id}
 
 
 
